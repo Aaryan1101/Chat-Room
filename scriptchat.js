@@ -9,7 +9,7 @@ let socket;
         socket.send(`join ${username}`);
         document.getElementById('join-form').style.display = 'none';
         document.getElementById('message-form').style.display = 'block';
-        // Add a welcome message for the new user
+
         document.getElementById('chat-log').innerHTML += `<p>You have joined the chat!</p>`;
       };
     });
@@ -24,9 +24,9 @@ let socket;
 
     socket.onmessage = (event) => {
       const message = event.data;
-      if (message.startsWith('**')) { // Handle system messages (e.g., user joined/left)
+      if (message.startsWith('**')) { 
         document.getElementById('chat-log').innerHTML += `<p>${message}</p>`;
-      } else { // Handle regular messages
+      } else { 
         document.getElementById('chat-log').innerHTML += `<p>${message}</p>`;
       }
       document.getElementById('chat-log').scrollTop = document.getElementById('chat-log').scrollHeight;
