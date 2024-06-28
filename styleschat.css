@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  #chat-log {
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  body {
+    background-image: url('pxfuel.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    background-color: #cad8c9ad;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+
+  #chat-log {
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+    background-color: #e7e4e483;
+    padding: 20px;
+    border: 1px solid #6e9372;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+
+
+  #join-form {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #d0d8d1;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+  #join-form label{
+    font-family: inherit;
+    margin-right: 0.5em;
+    font-size: 100%;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+
+  #join-form input {
+    margin-right: 12px;
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+
+  }
+
+  #join-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 8px 16px;
+    gap: 8px;
+    height: 40px;
+    width: 128px;
+    border: none;
+    background: #056bfa27;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+  }
+
+  #message-form {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    max-width: 1900px;
+    margin: 20px auto 20px;
+    padding: 20px;
+    background-color: #2f9b7470;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+  #message-form input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #00000040;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 1325px;
+    transition: all ease-in-out .2s;
+  }
+  
+  #message-form input:hover, #message-form input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  #message-form input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  #message-form input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  #message-form input:focus + #message-form button {
+    background-color: #f0eeee;
+  } 
+
+  #join-form button:hover{
+    background-color: #056bfa4b; 
+}
+
+#message-form button:hover {
+    background-color: #00000092;
+}
+
+#message-form button {
+    margin-left: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 30px;
+    background-color: #0000004d;
+    color: #ffffffb5;
+    border: none;
+    padding: 0.7rem 1rem;
+    transition: all ease-in-out .2s;
+}
